@@ -1,0 +1,14 @@
+.button {
+    font-family: Roboto, sans-serif;
+    @include font(16px, 700, 30px);
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    background-color: var(--accent-text-color);
+    color: var(--accent-secondary-text-color);
+    cursor: pointer;
+    min-width: 216px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    margin: auto;    
+}

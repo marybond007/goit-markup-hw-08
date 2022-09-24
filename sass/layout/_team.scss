@@ -1,0 +1,69 @@
+.list-name {
+    list-style: none;
+     .title-name {
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--primary-text-color);
+            background-color: var(--accent-secondary-text-color);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+        }
+     .text {
+            margin-top: 10px;
+            margin-bottom: 16px;
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--secondary-text-color);
+        }
+}
+.employees {
+    background-color: #F5F4FA;
+}
+.employees-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+
+.list-name-container {
+    display: flex;
+    column-gap: 30px;
+    text-align: center;
+}
+
+.team {
+    padding: 30px 0;
+}
+.name-container {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.social-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    column-gap: 10px;
+}
+.sotial-list-link {
+    @extend %aline;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--social-lincs-color);
+    transition: color var(--hover-focus-transition), background-color var(--hover-focus-transition);
+    &:hover,
+    &:focus {
+            background-color: var(--accent-text-color);
+            color: var(--accent-secondary-text-color);
+        }
+}
+
+.sotial-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
