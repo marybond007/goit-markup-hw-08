@@ -20,17 +20,22 @@
   <body>
     <header>
       <div class="container heder-container">
-        <nav class="heder-container">
+        <nav class="heder">
           <a href="./index.html" class="logo header-logo"
             >Web<span class="logo_top">Studio</span></a
           >
-          <ul class="site-nav heder-container">
+          <ul class="site-nav ">
             <li class="menu-item"><a href="./index.html" class="menu-item_link menu-item_current">Студія</a></li>
             <li class="menu-item"><a href="./portfolio.html" class="menu-item_link">Портфоліо</a></li>
             <li class="menu-item"><a href="./index.html" class="menu-item_link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="header-contacts heder-container">
+        <button type="button" class="open-mobile-menu-btn js-open-menu">
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <ul class="header-contacts">
           <li>
             <div class="icon-contacts">
              <a href="mailto:info@devstudio.com" class="above"><svg aria-label="конверт" class="above__icon" width="16" height="12">
@@ -47,14 +52,53 @@
         </li>
         </ul>
       </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn js-close-menu">
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__site-nav">
+            <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__item_link mobile-menu__item_current">Студія</a></li>
+            <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__item_link">Портфоліо</a></li>
+            <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__item_link">Контакти</a></li>
+          </ul>
+          <ul class="mobile-menu__contacts">
+            <li>
+              <a href="tel:+380961111111" class="mobile-menu__pone">+38 096 111 11 11</a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mobile-menu__mail">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-list">
+            <li>
+              <a href="" class="mobile-menu__social-link">Instagram</a>
+            </li>
+            <li>
+              <a href="" class="mobile-menu__social-link">Twitter</a>
+            </li>
+            <li>
+              <a href="" class="mobile-menu__social-link">Facebook</a>
+            </li>
+            <li>
+              <a href="" class="mobile-menu__social-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
+     <!-- HERO-->
       <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
+      
+      <!--ABOUT-->
       <section class="quality section">
         <div class="container">
           <h2 class="visualy-hidden">Наші переваги</h2>
@@ -104,91 +148,8 @@
           </ul>
         </div>
       </section>
-      <section class="work section">
-        <div class="container">
-          <h2 class="work-title">Чим ми займаємося</h2>
-          <ul class="list-photo list-photo-container">
-            <li class="list-photo-overley">             
-             <picture>
-        <source
-          srcset="./images/above/box1-desktop.webp 1x, ./images/above/box1-desktop@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/above/box1-desktop.jpg 1x, ./images/above/box1-desktop@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
-        <img src="./images/above/box1-desktop.jpg" alt="Програмне забеспечння" class="overley-img" />
-      </picture>
-             <p class="discribe-photo">Десктопні додатки</p>
-            </li>
-            <li class="list-photo-overley">            
-            <picture>
-        <source
-          srcset="./images/above/box2-desktop.webp 1x, ./images/above/box2-desktop@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/above/box2-desktop.jpg 1x, ./images/above/box2-desktop@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
-        <img src="./images/above/box2-desktop.jpg" alt="Розробка мобіліних додатків" class="overley-img" />
-      </picture>
-            <p class="discribe-photo"> Мобільні додатки</p></li>
-            <li class="list-photo-overley">
-            <picture>
-        <source
-          srcset="./images/above/box3-desktop.webp 1x, ./images/above/box3-desktop@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/above/box3-desktop.jpg 1x, ./images/above/box3-desktop@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
-        <img src="./images/above/box3-desktop.jpg" alt="Програмування на комп'ютері" class="overley-img" />
-      </picture>
-              <p class="discribe-photo">Дизайнерські рішення</p></li>
-          </ul>
-        </div>
-      </section>
-      <section class="employees section">
-        <div class="container">
-          <h2 class="employees-title">Наша команда</h2>
-          <ul class="list-name list-name-container">
-            <li class="title-name">
-            <picture>
-        <source
-          srcset="./images/team/desktop/team1-desktop.webp 1x, ./images/team/desktop/team1-desktop@2x.webp 2x"
-          media="(min-width: 1200px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/desktop/team1-desktop.jpg 1x, ./images/team/desktop/team1-desktop@2x.jpg 2x"
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="./images/team/tablet/team1-tablet.webp 1x, ./images/team/tablet/team1-tablet@2x.webp 2x"
-          media="(min-width: 768px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/tablet/team1-tablet.jpg 1x, ./images/team/tablet/team1-tablet@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="./images/team/mobile/team1-mobile.webp 1x, ./images/team/mobile/team1-mobile@2x.webp 2x"
-          media="(max-width: 767px)"
-          type="image/webp"
-        />
-        <source
-          srcset="./images/team/mobile/team1-mobile.jpg 1x, ./images/team/mobile/team1-mobile@2x.jpg 2x"
-          media="(max-width: 767px)"
-        />
-        <img src="./images/team/tablet/team1-mobile.jpg" alt="Ігор Дем'яненко" class="team-img" />
-      </picture> 
+<!--WORK-->
+     <!--
               <div class="team">
                 <h3 class="name-container">Ігор Дем'яненко</h3>
                 <p class="text" lang="en">Product Designer</p>
@@ -320,8 +281,9 @@
           media="(max-width: 767px)"
         />
         <img src="./images/team/mobile/team3-mobile.jpg" alt="Микола Тарасов" class="team-img" />
-      </picture> 
-              <div class="team">
+      </picture> -->
+      <!--TEEM-->
+      <!--    <div class="team">
                 <h3 class="name-container">Микола Тарасов</h3>
                 <p class="text" lang="en">Marketing</p>
                 <ul class="social-list">
@@ -424,8 +386,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section">
+      </section> -->
+      <!--CUSTOMER-->
+      <!--<section class="section">
         <div class="container">
           <h2 class="customer-title">Постійні клієнти</h2>
           <ul class="customer-list">
@@ -474,8 +437,11 @@
           </ul>
         </div>
       </section>
-    </main>
-    <footer class="site-down">
+    </main>-->
+
+    <!--FOOTER-->
+
+    <!--<footer class="site-down">
       <div class="container footer-logo-adress">
         <div class ="logo-adress">
         <a href="./index.html" class="logo logo-footer">Web<span class="logo_down">Studio</span></a>
@@ -546,8 +512,10 @@
               
             </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer>-->
+    <!--MODAL WINDOW-->
+
+    <!--<div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type='button' class="modal-close-button" data-modal-close>
           <svg class="modal-close-icon" width="18" height="18"><use href="./images/sprite.svg#icon-close">
@@ -593,7 +561,8 @@
           <button type="submit" class="modal-form-sumbit">Відправити</button>
         </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div>-->
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

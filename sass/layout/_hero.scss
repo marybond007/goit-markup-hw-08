@@ -8,12 +8,26 @@
     margin: 0 auto;
     background-repeat: no-repeat;
 }
+ .hero__title {
+     font-weight: 900;
+     font-size: 26px;
+     line-height: 1.36;
+     min-width: 320px;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+     color: var(--accent-secondary-text-color);
+     align-items: center;
+     flex-direction: column;
+     margin: auto;
+     margin-bottom: 30px;
+ }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
 screen and (min-resolution: 192dpi) and (min-width: 320px),
 screen and (min-resolution: 2dppx) and (min-width: 320px) {
     .hero {
         background-image: url("../images/heero/hero-mobile@2x.jpg");
     }
+       
 }
 @media screen and (min-width: 768px) {
    .hero {
@@ -40,16 +54,3 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     }
 }
 
-.hero__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    width: 696px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--accent-secondary-text-color);
-    align-items: center;
-    margin: auto;
-    margin-bottom: 30px;
-}

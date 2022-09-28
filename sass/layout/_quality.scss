@@ -1,8 +1,8 @@
 .list-quality-container {
     display: flex;
-    column-gap: 30px;
+    gap: 30px;
+flex-direction: column;
 }
-.list-photo,
 .list-quality {
     list-style: none;
 }
@@ -10,15 +10,14 @@
     font-weight: 700;
     font-size: 36px;
     text-align: center;
-    color: var(--primary-text-color);
+    color: var(--primary-text-color);   
 }
 .icon-border {
     @extend %aline;
-    width: 270px;
-    height: 120px;
+    width: calc(100%-30px)/2;
     background-color: var(--secondary-bcg-color);
     border-radius: 4px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;   
 }
 .icon-quality {
     width: 70px;

@@ -1,0 +1,105 @@
+.site-nav {
+    display: none;
+}
+
+.header-contacts {
+    display: none;
+}
+.open-mobile-menu-btn {
+    border: none;
+    background-color: transparent;
+    padding: 10px 0 0 0;
+}
+.open-mobile-menu-btn__icon {
+    width: 40px;
+    height: 40px;
+}
+.heder-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .open-mobile-menu-btn__icon {
+        display: none;
+        }
+.heder {
+    display: flex;
+    align-items: baseline;
+    
+}
+.site-nav {
+    display: flex;
+    column-gap: 50px;
+    margin-top: 32px;
+    margin-left: 88px;
+    
+     .menu-item_link {
+            color: var(--primary-text-color);
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color var(--hover-focus-transition);
+            &:hover,
+            &:focus {
+                color: var(--accent-text-color);
+            }
+        }
+}
+.menu-item_link.menu-item_current {
+    color: var(--accent-text-color);
+    &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            margin-top: 32px;
+            background-color: var(--accent-text-color);
+            border-radius: 2px;
+        }
+}
+.header-contacts,
+.site-nav {
+    list-style: none;
+}
+
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+    gap: 10px;
+    flex-direction: column;
+    
+}
+
+.icon-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.above {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    transition: color var(--hover-focus-transition);
+        .icon-contacts:hover &,
+        .icon-contacts:focus & {
+            color: var(--accent-text-color);
+        }
+}
+.above__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+}
+@media screen and (min-width: 1200px) {
+    .header-contacts {
+           flex-direction: row;
+            column-gap: 30px;
+        }
+}
