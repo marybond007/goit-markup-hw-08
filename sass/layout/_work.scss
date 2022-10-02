@@ -13,6 +13,8 @@
 .list-photo-container {
     display: flex;
     column-gap: 30px;
+    list-style: none;
+    padding-bottom: 94px;
 }
 .list-photo-overley {
     position: relative;
@@ -30,5 +32,12 @@
     @extend %aline;;
 }
 .work {
+     display: none;
+    
+}
+@media screen and (min-width:1200px){
+   .work { 
+    display: contents;
     padding-top: 0;
+   }
 }

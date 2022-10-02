@@ -65,10 +65,16 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -558,8 +564,9 @@ body {
 }
 .hero {
   background-color: var(--primary-bcg-color);
-  min-height: 600px;
-  padding: 200px 0;
+  min-height: 400px;
+  padding-top: 116px;
+  max-width: 100%;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/heero-mobile.jpg");
   background-size: cover;
@@ -618,13 +625,13 @@ body {
     background-image: url("../images/hero/heero-desktop@2x.jpg");
   }
 }
-.list-quality-container {
+.list-quality {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
 
-.list-quality {
+.list-quality-container {
   list-style: none;
 }
 
@@ -636,6 +643,7 @@ body {
 }
 
 .icon-border {
+  height: 120px;
   background-color: var(--secondary-bcg-color);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -700,6 +708,8 @@ body {
 .list-photo-container {
   display: flex;
   column-gap: 30px;
+  list-style: none;
+  padding-bottom: 94px;
 }
 
 .list-photo-overley {
@@ -719,9 +729,15 @@ body {
 }
 
 .work {
-  padding-top: 0;
+  display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .work {
+    display: contents;
+    padding-top: 0;
+  }
+}
 .list-name {
   list-style: none;
 }
@@ -751,12 +767,13 @@ body {
   line-height: 1.16;
   text-align: center;
   color: var(--primary-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .list-name-container {
   display: flex;
-  column-gap: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
   text-align: center;
 }
 

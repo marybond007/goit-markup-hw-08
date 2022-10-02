@@ -25,12 +25,13 @@
     line-height: 1.16;
     text-align: center;
     color: var(--primary-text-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .list-name-container {
     display: flex;
-    column-gap: 30px;
+   gap: 30px;
+   flex-wrap: wrap;
     text-align: center;
 }
 
