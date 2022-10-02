@@ -1,11 +1,18 @@
 .modal-form-title {
+    width: 370px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
-    text-align: center;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center ;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-bottom: 12px;
+        @media screen and (min-width: 1200px) {
+        line-height: 23px; 
+        width: 448px;
+    }
 }
 .modal-form {
     display: flex;
@@ -26,6 +33,7 @@
             outline: none;
             cursor: pointer;
         }
+   
 }
 
 .modal-form-field-lact {
@@ -85,9 +93,9 @@
 .modal-form-check-field {
     @extend %aline;
     margin-bottom: 30px;
-}
+   }
 .modal-form-own-checkbox {
-    width: 16px;
+    width:16px;
     height: 15px;
     cursor: pointer;
     border: 1px solid var(--primary-text-color);

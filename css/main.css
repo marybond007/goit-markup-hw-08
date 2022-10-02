@@ -282,8 +282,8 @@ body {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  min-width: 400px;
+  height: 609px;
   padding: 40px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -291,6 +291,16 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 360px), (max-width: 768px) {
+  .modal {
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 448px;
+  }
 }
 
 .modal-close-button {
@@ -311,13 +321,22 @@ body {
 }
 
 .modal-form-title {
+  width: 370px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-title {
+    line-height: 23px;
+    width: 448px;
+  }
 }
 
 .modal-form {
