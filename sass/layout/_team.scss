@@ -1,5 +1,6 @@
 .list-name {
     list-style: none;
+    
      .title-name {
             font-weight: 500;
             font-size: 16px;
@@ -16,6 +17,7 @@
             color: var(--secondary-text-color);
         }
 }
+
 .employees {
     background-color: #F5F4FA;
 }
@@ -33,6 +35,7 @@
    gap: 30px;
    flex-wrap: wrap;
     text-align: center;
+min-width: 100%;
 }
 
 .team {
