@@ -826,10 +826,14 @@ body {
   display: flex;
   gap: 30px;
   list-style: none;
+  flex-wrap: wrap;
+}
+
+.customer-list__item {
+  width: calc((100% - 30px) / 2);
 }
 
 .customer-link {
-  width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -841,6 +845,16 @@ body {
   color: var(--accent-text-color);
 }
 
+@media screen and (min-width: 768px) {
+  .customer-list__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer-list__item {
+    width: calc((100% - 150px) / 6);
+  }
+}
 .customer-link__icon {
   width: 106px;
   height: 60px;
