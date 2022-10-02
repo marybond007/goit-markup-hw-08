@@ -6,7 +6,10 @@
     line-height: 28px;
     letter-spacing: 0.03em;
     text-decoration: none;
-    
+    @media screen and (min-width: 1200px){
+    font-size: 26px;
+    line-height: 31px; 
+}
 }
 
 
