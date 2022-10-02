@@ -97,7 +97,7 @@ body {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.06em;
-  padding: 10px 32px;
+  padding: 10px 24px;
   background-color: var(--accent-text-color);
   color: var(--accent-secondary-text-color);
   cursor: pointer;
@@ -108,6 +108,11 @@ body {
   margin: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .button {
+    min-width: 216px;
+  }
+}
 .logo {
   color: var(--accent-text-color);
   font-family: Raleway, sans-serif;
@@ -565,8 +570,8 @@ body {
 .hero__title {
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.36;
-  min-width: 320px;
+  line-height: 42px;
+  min-width: 260px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-secondary-text-color);
@@ -576,6 +581,18 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 480px), (max-width: 1200px) {
+  .hero__title {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    min-width: 696px;
+    font-size: 44px;
+    line-height: 60px;
+  }
+}
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
     background-image: url("../images/heero/hero-mobile@2x.jpg");
@@ -603,10 +620,10 @@ body {
 }
 .list-quality-container {
   display: flex;
-  column-gap: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.list-photo,
 .list-quality {
   list-style: none;
 }
@@ -619,8 +636,6 @@ body {
 }
 
 .icon-border {
-  width: 270px;
-  height: 120px;
   background-color: var(--secondary-bcg-color);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -647,13 +662,29 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-transform: uppercase;
+  text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .list-title {
+    text-align: start;
+  }
+}
 .list-quality .text-quality {
   line-height: 1.72;
   color: var(--secondary-text-color);
 }
 
+@media screen and (min-width: 768px), (max-width: 1199px) {
+  .list-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-item {
+    width: 270px;
+  }
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;

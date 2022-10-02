@@ -10,8 +10,12 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    margin: auto;    
+    margin: auto;   
 }
+
+
 @media screen and (min-width: 1200px) {
-    min-width: 216px;
+   .button {
+     min-width: 216px;
+    }
 }
