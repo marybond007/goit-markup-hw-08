@@ -587,7 +587,6 @@ body {
   margin: auto;
   margin-bottom: 30px;
 }
-
 @media screen and (min-width: 480px), (max-width: 1200px) {
   .hero__title {
     max-width: 360px;
@@ -600,9 +599,10 @@ body {
     line-height: 60px;
   }
 }
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
-    background-image: url("../images/heero/hero-mobile@2x.jpg");
+    background-image: url("../images/hero/heero-mobile@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
@@ -643,6 +643,7 @@ body {
 }
 
 .icon-border {
+  min-width: 100%;
   height: 120px;
   background-color: var(--secondary-bcg-color);
   border-radius: 4px;
@@ -683,8 +684,10 @@ body {
   color: var(--secondary-text-color);
 }
 
-@media screen and (min-width: 768px), (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .list-item {
+    flex-wrap: wrap;
+    max-width: 450px;
     width: calc((100% - 30px) / 2);
   }
 }
