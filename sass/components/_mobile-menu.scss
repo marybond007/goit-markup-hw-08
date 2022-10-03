@@ -19,6 +19,9 @@
 .mobile-menu__container {
     position: relative;
     padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .mobile-menu__close-btn {
     position: absolute;
@@ -66,7 +69,7 @@ height: 40px;
  .mobile-menu__contacts {
     display: flex;
     flex-direction: column;
-    margin-top: 302px;
+    margin-top: auto;
     margin-bottom: 64px;
     gap: 32px;
  }
@@ -90,6 +93,7 @@ height: 40px;
     display: flex;
     gap: 10px;
     margin-bottom: 48px;
+    flex-wrap: wrap;
  }
  
  .mobile-menu__social-link {

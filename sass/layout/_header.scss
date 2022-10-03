@@ -26,8 +26,7 @@
         }
 .heder {
     display: flex;
-    align-items: baseline;
-    
+    align-items: baseline;   
 }
 .site-nav {
     display: flex;
@@ -63,14 +62,13 @@
 .header-contacts,
 .site-nav {
     list-style: none;
-}
+    }
 
 .header-contacts {
     display: flex;
     margin-left: auto;
     gap: 10px;
-    flex-direction: column;
-    
+    flex-direction: column;       
 }
 
 .icon-contacts {
@@ -85,6 +83,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.02em;
+    text-decoration: none;
     color: var(--secondary-text-color);
     transition: color var(--hover-focus-transition);
         .icon-contacts:hover &,
@@ -101,5 +100,9 @@
     .header-contacts {
            flex-direction: row;
             column-gap: 30px;
+    }
+            .above {
+            font-size: 14px;
+            line-height: 16px;
         }
 }

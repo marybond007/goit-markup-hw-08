@@ -1,8 +1,9 @@
 .hero {
   background-color: var(--primary-bcg-color);
-  min-height: 400px;
-  padding-top: 116px;
-  max-width: 100%;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 480px;
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero/heero-mobile.jpg');
@@ -36,30 +37,40 @@
   screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
-    background-image: url('../images/hero/heero-mobile@2x.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url('../images/hero/heero-mobile@2x.jpg');
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url('../images/hero/heero-tablet.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero/heero-tablet.jpg');
+     max-width: 1200px;
+     height: 600px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url('../images/hero/heero-tablet@2x.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+     url('../images/hero/heero-tablet@2x.jpg');
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url('../images/hero/heero-desktop.jpg');
-  }
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero/heero-desktop.jpg');
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+     }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url('../images/hero/heero-desktop@2x.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero/heero-desktop@2x.jpg');
   }
 }
