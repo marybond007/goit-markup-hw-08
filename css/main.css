@@ -644,8 +644,8 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/heero-tablet.jpg");
-    max-width: 1200px;
-    height: 600px;
+    max-width: 768px;
+    height: 400px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -1058,7 +1058,6 @@ body {
 .mail-imput-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .mail-imput-form {
@@ -1094,7 +1093,7 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 480px), (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .footer-mail-input-form {
     width: 450px;
   }
